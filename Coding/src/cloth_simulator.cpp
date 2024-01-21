@@ -416,7 +416,7 @@ Eigen::Matrix<float, Eigen::Dynamic, 1> RectClothSimulator::getExternalForceVect
         auto V_i = Eigen::Vector3f(V_i_glm.x, V_i_glm.y, V_i_glm.z);
         externalForceVector.block<3, 1>(3 * i, 0) += Eigen::Vector3f(G_i.x, G_i.y, G_i.z);
 #if AIR_RESIS
-        externalForceVector.block<3, 1>(3 * i, 0) -= airResistanceCoefficient * V_i * V_i.norm();
+        externalForceVector.block<3, 1>(3 * i, 0) -= airResistanceCoefficient / timeStep * V_i * V_i.norm();
 #endif
     }
     return timeStep * timeStep * -externalForceVector;
