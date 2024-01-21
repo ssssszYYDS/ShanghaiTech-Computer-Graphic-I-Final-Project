@@ -83,8 +83,8 @@ int main(int argc, char *argv[]) {
 #endif
 
         // Cloth settings
-        unsigned int nWidth = 10;
-        unsigned int nHeight = 20;
+        unsigned int nWidth = 20;
+        unsigned int nHeight = 30;
         float dx = 0.1f;
         auto clothTransform = glm::rotate(glm::mat4(1.0f),
                                           glm::radians(180.0f), {1.0f, 0.0f, 0.0f}); // Represents a rotation of 60 degrees around the x-axis.
