@@ -76,15 +76,15 @@ int main(int argc, char *argv[]) {
         // Overall settings
         auto vertexShader = "../../res/shader/cloth.vs";
         auto fragmentShader = "../../res/shader/cloth.fs";
-        const float timeStep = 0.007f;
+        const float timeStep = 0.005f;
 
 #if PROJECT
-        const int maxIter = 5;
+        const int maxIter = 1;
 #endif
 
         // Cloth settings
-        unsigned int nWidth = 40 - 10;
-        unsigned int nHeight = 30 - 10;
+        unsigned int nWidth = 30;
+        unsigned int nHeight = 20;
         float dx = 0.1f;
         auto clothTransform = glm::rotate(glm::mat4(1.0f),
                                           glm::radians(160.0f), {1.0f, 0.0f, 0.0f}); // Represents a rotation of 60 degrees around the x-axis.
@@ -93,7 +93,7 @@ int main(int argc, char *argv[]) {
         // float stiffnessReference = 5.0f;
         glm::vec3 gravity = {0.0f, -9.81f, 0.0f};
         // float airResistanceCoefficient = 0.002f;
-        float airResistanceCoefficient = 1.0f;
+        float airResistanceCoefficient = 50.0f;
 
 #if BONUS_WIND
         // bonus wind

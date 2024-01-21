@@ -477,6 +477,6 @@ void RectClothSimulator::applyConstraints() {
     int right_up_index = cloth->idxFromCoord(cloth->nw - 1, 0);
     q_n.block<3, 1>(3 * left_up_index, 0) = Eigen::Vector3f(cloth->getInitialPosition(0, 0).x, cloth->getInitialPosition(0, 0).y, cloth->getInitialPosition(0, 0).z);
     q_n.block<3, 1>(3 * right_up_index, 0) = Eigen::Vector3f(cloth->getInitialPosition(cloth->nw - 1, 0).x, cloth->getInitialPosition(cloth->nw - 1, 0).y, cloth->getInitialPosition(cloth->nw - 1, 0).z);
-    q_n_1.block<3, 1>(3 * left_up_index, 0) = Eigen::Vector3f(cloth->getInitialPosition(0, 0).x, cloth->getInitialPosition(0, 0).y, cloth->getInitialPosition(0, 0).z);
-    q_n_1.block<3, 1>(3 * right_up_index, 0) = Eigen::Vector3f(cloth->getInitialPosition(cloth->nw - 1, 0).x, cloth->getInitialPosition(cloth->nw - 1, 0).y, cloth->getInitialPosition(cloth->nw - 1, 0).z);
+    // q_n_1.block<3, 1>(3 * left_up_index, 0) = Eigen::Vector3f(cloth->getInitialPosition(0, 0).x, cloth->getInitialPosition(0, 0).y, cloth->getInitialPosition(0, 0).z);
+    // q_n_1.block<3, 1>(3 * right_up_index, 0) = Eigen::Vector3f(cloth->getInitialPosition(cloth->nw - 1, 0).x, cloth->getInitialPosition(cloth->nw - 1, 0).y, cloth->getInitialPosition(cloth->nw - 1, 0).z);
 }
