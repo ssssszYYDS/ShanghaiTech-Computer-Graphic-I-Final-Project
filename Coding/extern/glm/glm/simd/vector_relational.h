@@ -1,0 +1,10 @@
+/// @ref simd
+/// @file glm/simd/vector_relational.h
+
+#ifndef LIBS_GLM_GLM_SIMD_VECTOR_RELATIONAL_H_
+#define LIBS_GLM_GLM_SIMD_VECTOR_RELATIONAL_H_
+
+#if GLM_ARCH & GLM_ARCH_SSE2_BIT
+
+#endif//GLM_ARCH & GLM_ARCH_SSE2_BIT
+#endif  // LIBS_GLM_GLM_SIMD_VECTOR_RELATIONAL_H_
