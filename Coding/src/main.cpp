@@ -93,7 +93,7 @@ int main(int argc, char *argv[]) {
         // float stiffnessReference = 5.0f;
         glm::vec3 gravity = {0.0f, -9.81f, 0.0f};
         // float airResistanceCoefficient = 0.002f;
-        float airResistanceCoefficient = 50.0f;
+        float airResistanceCoefficient = 1.0f;
 
 #if BONUS_WIND
         // bonus wind
