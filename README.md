@@ -4,8 +4,6 @@ Name: 夏康杰
 
 Student ID: 2021533071
 
-**Please write your name and your student ID in this README.**
-
 ## Introduction
 
 This is a GUI program using OpenGL for real-time cloth simulation. Please read the following instructions carefully before working on this project.
@@ -29,7 +27,9 @@ cmake --build . --config Release -j 4
 
 After running this you only need to execute the last command to compile again.
 
-If you have any trouble compiling, please contact TAs.
+If you are windows, you can just run the file: simulate.bat.
+
+If you have any trouble compiling, please contact me by the email: xiakj@shanghaitech.edu.cn
 
 You should be able to see a window with some contents in it if you run the compiled program.
 
